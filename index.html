@@ -11,38 +11,37 @@
 
 <body>
 
-    <header id="main-header">
+    <header id="main-header" class="main-header">
         <div>
             <h1 id="header-tilte">Item Lister</h1>
         </div>
 
         <div>
-            <input type="text" class="search-form" placeholder="Search Items">
+            <input type="text" id="filter" class="search-form" placeholder="Search Items">
         </div>
     </header>
 
     <div class="container">
 
-        <div id="card">
+        <div id="main">
             <h1>Add Items</h1>
-            <input class="textFeild" name="item" placeholder="Your Item..">
-            <input type="submit" value="Submit">
-        </div>
+            <form id="addForm">
+                <input id="inputItem" class="textFeild" name="item" placeholder="Your Item..">
+                <input type="submit" value="Submit">
+            </form>
 
-
-        <div>
             <h2 class="items-title">Items</h2>
-            <ul>
-                <li class="list-group-items">Item 1 <button class="delete-btn">X</button> </li>
-                <li class="list-group-items">Item 2 <button class="delete-btn">X</button></li>
-                <li class="list-group-items">Item 3 <button class="delete-btn">X</button></li>
-                <li class="list-group-items">Item 4 <button class="delete-btn">X</button></li>
-                <li class="list-group-items">Item 5 <button class="delete-btn">X</button></li>
+            <ul id="items">
+                <li class="list-group-items">Item 1 <button class="delete-btn delete">X</button> </li>
+                <li class="list-group-items">Item 2 <button class="delete-btn delete">X</button></li>
+                <li class="list-group-items">Item 3 <button class="delete-btn delete">X</button></li>
+                <li class="list-group-items">Item 4 <button class="delete-btn delete">X</button></li>
+                <li class="list-group-items">Item 5 <button class="delete-btn delete">X</button></li>
             </ul>
+
         </div>
-
     </div>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
